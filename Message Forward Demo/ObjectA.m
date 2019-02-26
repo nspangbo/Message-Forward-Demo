@@ -10,4 +10,8 @@
 
 @implementation ObjectA
 
+- (void)printHelloA {
+    NSLog(@"Hello, ObjectA instance.");
+}
+
 @end

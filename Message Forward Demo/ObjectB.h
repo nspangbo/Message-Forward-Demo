@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ObjectB : NSObject
 
+- (void)printHelloB;
+
 @end
 
 NS_ASSUME_NONNULL_END

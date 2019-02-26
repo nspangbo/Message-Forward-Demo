@@ -7,11 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ObjectA.h"
+#import "ObjectB.h"
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
+    
+    ObjectA *a = [[ObjectA alloc] init];
+    ObjectB *b = [[ObjectB alloc] init];
+    
+    [a printHelloA];
+    [b printHelloB];
+    
+    [b performSelector:@selector(printHelloA)];
+    [b performSelector:@selector(printHelloA)];
+    
+    
     return 0;
 }
